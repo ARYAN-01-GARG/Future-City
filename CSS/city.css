@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* || RESET */
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input,button,textarea{
+    font: inherit;
+}
+
+/* || UTILITY CLASSES */
+
+.offscreen {
+    position: absolute;
+    left: -10000px;
+}
+
+.nowrap{
+    white-space: nowrap;
+}
+
+.center{
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* || GENERAL STYLES */
+
+html {
+    scroll-behavior: smooth;
+    font-size: 1.2rem;
+    font-family: Poppins , sans-serif ;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #330451;
+    background-image: linear-gradient( to right ,rgb(23,4,80) ,rgb(60,6,96));
+
+}
+
+header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+
+.menu{
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    gap: 1rem;
+
+}
+.menu a:any-link{
+    text-decoration: none;
+    color: rgb(198, 187, 187);
+    font-size: 0.75rem;
+    font-weight: 550;
+}
+
+.menu a:hover{
+    color: white;
+    font-weight: 700;
+} 
+
+.menu_sp{
+    text-decoration: none;
+    color: rgb(233, 242, 243);
+    padding: 1rem 1.5rem;
+    border: 2px solid #4dbad6;
+    border-radius: 30px;
+    margin-left: 2rem ;
+}
+
+.city{
+    position: relative;
+    padding: 1rem 1.5rem;
+    margin: auto;   
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+}
+
+.city_data{
+    margin: 2rem;
+    padding: 2rem;
+    color: #4dbad6;
+    max-width: 800px;
+    line-height: 1.4;
+}
+
+.city_data h2{
+    margin: 0 0 1.5rem 0;
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    background-image: linear-gradient(to right ,rgb(152, 5, 250),rgb(41, 130, 198),rgb(9, 159, 189));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.city_data p{
+    margin-bottom: 2.5rem;
+}
+.city_data a:any-link{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    border-radius: 50px;
+    box-shadow: 2px 2px 20px rgba(6, 183, 174, 0.555);
+    background-color: #4dbad6;
+    background-image: linear-gradient( to right , rgb(123,72,232), #4dbad6);
+}
+
+
+.city_data a:hover{
+    background-image: linear-gradient( to right , rgb(105, 62, 198), #4097ad);
+    box-shadow: none;
+}
+
+figure img{
+    margin: 3rem 0 0 2rem;
+    filter: drop-shadow(10px 10px 200px rgb(205, 30, 179));
+}
+
+
+
